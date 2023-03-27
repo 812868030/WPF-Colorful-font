@@ -1,0 +1,183 @@
+﻿<Window x:Class="WPF_Colorful_font.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Colorful_font" 
+        xmlns:media="clr-namespace:Media"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        Background="#FF222222">
+
+    <FrameworkElement.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation AutoReverse="True"
+                                     FillBehavior="HoldEnd"
+                                     RepeatBehavior="Forever"
+                                     Storyboard.TargetName="TextPathRed"
+                                     Storyboard.TargetProperty="StrokeDashOffset"
+                                     From="0"
+                                     To="1000"
+                                     Duration="0:0:30" />
+                    <DoubleAnimation AutoReverse="True"
+                                     FillBehavior="HoldEnd"
+                                     RepeatBehavior="Forever"
+                                     Storyboard.TargetName="TextPathWhite"
+                                     Storyboard.TargetProperty="StrokeDashOffset"
+                                     From="10"
+                                     To="1000"
+                                     Duration="0:0:30" />
+                    <DoubleAnimation AutoReverse="True"
+                                     FillBehavior="HoldEnd"
+                                     RepeatBehavior="Forever"
+                                     Storyboard.TargetName="TextPathBlue"
+                                     Storyboard.TargetProperty="StrokeDashOffset"
+                                     From="20"
+                                     To="1000"
+                                     Duration="0:0:30" />
+                    <DoubleAnimation AutoReverse="True"
+                                     FillBehavior="HoldEnd"
+                                     RepeatBehavior="Forever"
+                                     Storyboard.TargetName="TextPathRed2"
+                                     Storyboard.TargetProperty="StrokeDashOffset"
+                                     From="0"
+                                     To="1000"
+                                     Duration="0:0:30" />
+                    <DoubleAnimation AutoReverse="True"
+                                     FillBehavior="HoldEnd"
+                                     RepeatBehavior="Forever"
+                                     Storyboard.TargetName="TextPathWhite2"
+                                     Storyboard.TargetProperty="StrokeDashOffset"
+                                     From="10"
+                                     To="1000"
+                                     Duration="0:0:30" />
+                    <DoubleAnimation AutoReverse="True"
+                                     FillBehavior="HoldEnd"
+                                     RepeatBehavior="Forever"
+                                     Storyboard.TargetName="TextPathBlue2"
+                                     Storyboard.TargetProperty="StrokeDashOffset"
+                                     From="20"
+                                     To="1000"
+                                     Duration="0:0:30" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </FrameworkElement.Triggers>
+
+    <Grid>
+
+        <Grid HorizontalAlignment="Center" Margin="92,50,92,180">
+            <media:TextShape x:Name="TextPathRed"
+                             HorizontalAlignment="Center"
+                             Fill="Transparent"
+                             FontSize="100"
+                             FontWeight="Bold"
+                             Stroke="#c43bb7"
+                             StrokeDashArray="10 50"
+                             StrokeThickness="4"
+                             Text="Hello Word">
+                <FrameworkElement.Effect>
+                    <DropShadowEffect BlurRadius="32"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="0"
+                                      Color="#c43bb7" />
+                </FrameworkElement.Effect>
+            </media:TextShape>
+
+            <media:TextShape x:Name="TextPathWhite"
+                             HorizontalAlignment="Center"
+                             Fill="Transparent"
+                             FontSize="100"
+                             FontWeight="Bold"
+                             Stroke="White"
+                             StrokeDashArray="10 50"
+                             StrokeDashOffset="10"
+                             StrokeThickness="4"
+                             Text="Hello Word">
+                <FrameworkElement.Effect>
+                    <DropShadowEffect BlurRadius="32"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="0"
+                                      Color="White" />
+                </FrameworkElement.Effect>
+            </media:TextShape>
+
+            <media:TextShape x:Name="TextPathBlue"
+                             HorizontalAlignment="Center"
+                             Fill="Transparent"
+                             FontSize="100"
+                             FontWeight="Bold"
+                             Stroke="#2de4ea"
+                             StrokeDashArray="10 50"
+                             StrokeDashOffset="20"
+                             StrokeThickness="4"
+                             Text="Hello Word">
+                <FrameworkElement.Effect>
+                    <DropShadowEffect BlurRadius="32"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="0"
+                                      Color="#1de4ea" />
+                </FrameworkElement.Effect>
+            </media:TextShape>
+        </Grid>
+
+        <Grid HorizontalAlignment="Center" Margin="92,240,92,180">
+            <media:TextShape x:Name="TextPathRed2"
+                             HorizontalAlignment="Center"
+                             Fill="Transparent"
+                             FontSize="100"
+                             FontWeight="Bold"
+                             Stroke="#c43bb7"
+                             StrokeDashArray="10 50"
+                             StrokeThickness="4"
+                             Text="GitHub">
+                <FrameworkElement.Effect>
+                    <DropShadowEffect BlurRadius="32"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="0"
+                                      Color="#c43bb7" />
+                </FrameworkElement.Effect>
+            </media:TextShape>
+
+            <media:TextShape x:Name="TextPathWhite2"
+                             HorizontalAlignment="Center"
+                             Fill="Transparent"
+                             FontSize="100"
+                             FontWeight="Bold"
+                             Stroke="White"
+                             StrokeDashArray="10 50"
+                             StrokeDashOffset="10"
+                             StrokeThickness="4"
+                             Text="GitHub">
+                <FrameworkElement.Effect>
+                    <DropShadowEffect BlurRadius="32"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="0"
+                                      Color="White" />
+                </FrameworkElement.Effect>
+            </media:TextShape>
+
+            <media:TextShape x:Name="TextPathBlue2"
+                             HorizontalAlignment="Center"
+                             Fill="Transparent"
+                             FontSize="100"
+                             FontWeight="Bold"
+                             Stroke="#2de4ea"
+                             StrokeDashArray="10 50"
+                             StrokeDashOffset="20"
+                             StrokeThickness="4"
+                             Text="GitHub">
+                <FrameworkElement.Effect>
+                    <DropShadowEffect BlurRadius="32"
+                                      RenderingBias="Quality"
+                                      ShadowDepth="0"
+                                      Color="#1de4ea" />
+                </FrameworkElement.Effect>
+            </media:TextShape>
+        </Grid>
+    </Grid>
+</Window>
